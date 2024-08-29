@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const addNewNote = require('../controllers/addNewNote');
+const allNotes = require('../controllers/allNotes');
 
-router.post('/add-note', addNewNote);
+router.get('/all-notes', allNotes);
 
 module.exports = router;

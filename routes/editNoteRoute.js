@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const addNewNote = require('../controllers/addNewNote');
+const editNote = require('../controllers/editNote');
 
-router.post('/add-note', addNewNote);
+router.post('/edit-note', editNote);
 
 module.exports = router;

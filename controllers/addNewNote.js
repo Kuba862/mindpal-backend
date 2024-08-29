@@ -5,7 +5,6 @@ dotenv.config();
 
 const addNewNote = async (req, res) => {
     const { title, content } = req.body;
-
     try {
         const newNote = new Note({
             title,
